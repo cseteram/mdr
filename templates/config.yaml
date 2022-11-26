@@ -1,0 +1,18 @@
+secrets:
+  developerKey:
+
+postgres:
+  host:
+  port:
+  username:
+  password:
+  dbname:
+
+profile:
+  nickname:
+  avatarUrl:
+
+notifications:
+- name:
+  channelId:
+  webhookUrl:
