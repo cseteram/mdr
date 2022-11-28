@@ -9,6 +9,8 @@
 
 # But not these files...
 !/.gitignore
+!/.dockerignore
+!/Dockerfile
 
 !*.go
 !go.sum
@@ -17,8 +19,9 @@
 !README.md
 !LICENSE
 
-!templates/*
-!tables/*
+!.github/**
+!templates/**
+!tables/**
 
 # !Makefile
 
