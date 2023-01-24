@@ -87,6 +87,10 @@ func main() {
 			handleError(err, "Failed to make API call")
 
 			for _, item := range response.Items {
+				if item.ContentDetails.Upload == nil {
+					continue
+				}
+
 				channelId := item.Snippet.ChannelId
 				channelTitle := item.Snippet.ChannelTitle
 				videoId := item.ContentDetails.Upload.VideoId
